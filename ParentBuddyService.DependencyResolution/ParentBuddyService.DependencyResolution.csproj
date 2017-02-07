@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{482BB85B-894E-482C-8ECC-5970752411CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ParentBuddyService.DependencyResolution</RootNamespace>
+    <AssemblyName>ParentBuddyService.DependencyResolution</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParentBuddyService.DataAccessLayer\ParentBuddyService.DataAccessLayer.csproj">
+      <Project>{FDF23E1B-DF17-4162-9453-DAE8595299A4}</Project>
+      <Name>ParentBuddyService.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.DataContracts\ParentBuddyService.DataContracts.csproj">
+      <Project>{8632736B-2E80-4DB9-8D68-9E3651CD38C0}</Project>
+      <Name>ParentBuddyService.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.ServiceContracts\ParentBuddyService.ServiceContracts.csproj">
+      <Project>{0FA312DD-0A92-4E05-B562-967BA6718F35}</Project>
+      <Name>ParentBuddyService.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyServices.Domain\ParentBuddyServices.Domain.csproj">
+      <Project>{06CC66EE-845F-47EA-B8F2-0A639255D6BB}</Project>
+      <Name>ParentBuddyServices.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

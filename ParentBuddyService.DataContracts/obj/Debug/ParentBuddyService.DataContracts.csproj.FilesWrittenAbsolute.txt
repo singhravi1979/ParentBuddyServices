@@ -1,0 +1,8 @@
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/bin/Debug/ParentBuddyService.DataContracts.dll.mdb
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/bin/Debug/ParentBuddyService.DataContracts.dll
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/obj/Debug/ParentBuddyService.DataContracts.dll
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/obj/Debug/ParentBuddyService.DataContracts.dll.mdb
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/bin/Debug/Newtonsoft.Json.dll
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/bin/Debug/System.Net.Http.Formatting.dll
+/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataContracts/bin/Debug/System.Web.Http.dll

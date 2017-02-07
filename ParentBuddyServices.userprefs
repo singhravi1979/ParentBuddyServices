@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{2B110528-F49E-43B5-97F3-D02D9508E356}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParentBuddyService.DataAccessLayer/DBPocos/UserPoco.cs">
+    <Files>
+      <File FileName="ParentBuddyService.DataAccessLayer/DataAccessServiceBootstrapper.cs" Line="10" Column="44" />
+      <File FileName="ParentBuddyServices/App_Start/UnityConfig.cs" Line="11" Column="48" />
+      <File FileName="ParentBuddyServices/App_Start/WebApiConfig.cs" Line="1" Column="1" />
+      <File FileName="ParentBuddyServices/Controllers/EventController.cs" Line="26" Column="30" />
+      <File FileName="ParentBuddyService.ServiceContracts/DomainServiceContracts/IEventService.cs" Line="7" Column="25" />
+      <File FileName="ParentBuddyServices.Domain/Events/EventService.cs" Line="15" Column="1" />
+      <File FileName="ParentBuddyService.DataAccessLayer/Events/EventDataAccessService.cs" Line="22" Column="34" />
+      <File FileName="ParentBuddyService.DataAccessLayer/Events/EventRepository.cs" Line="4" Column="52" />
+      <File FileName="ParentBuddyServices.Tests/app.config" Line="5" Column="22" />
+      <File FileName="ParentBuddyServices/Web.config" Line="6" Column="38" />
+      <File FileName="ParentBuddyServices/Global.asax.cs" Line="13" Column="3" />
+      <File FileName="ParentBuddyService.DataAccessLayer/MySqlRepository/MySqlRepository.cs" Line="71" Column="5" />
+      <File FileName="ParentBuddyService.DataContracts/PresentationModels/Event/EventResponsePresentationModel.cs" Line="9" Column="25" />
+      <File FileName="ParentBuddyService.DataContracts/PresentationModels/BaseResponsePresentationModel.cs" Line="42" Column="1" />
+      <File FileName="ParentBuddyService.DataContracts/PresentationModels/Event/EventRequestPresentationModel.cs" Line="19" Column="3" />
+      <File FileName="ParentBuddyService.DataContracts/EventDTO.cs" Line="4" Column="15" />
+      <File FileName="ParentBuddyService.DataAccessLayer/DBPocos/EventPoco.cs" Line="37" Column="4" />
+      <File FileName="ParentBuddyService.DataAccessLayer/DBPocos/UserPoco.cs" Line="6" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyService.DataAccessLayer/Models/ModelGenerator.tt" relfile="ParentBuddyService.DataAccessLayer/Models/ModelGenerator.tt" line="32" column="1" />
+      <Breakpoint file="/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyServices.Tests/TestEventDataaccessService.cs" relfile="ParentBuddyServices.Tests/TestEventDataaccessService.cs" line="25" column="1" />
+      <Breakpoint file="/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyServices.Tests/TestEventDataaccessService.cs" relfile="ParentBuddyServices.Tests/TestEventDataaccessService.cs" line="27" column="1" />
+      <Breakpoint file="/Users/ravindersingh/Projects/ParentBuddyServices/ParentBuddyServices.Tests/TestEventDataaccessService.cs" relfile="ParentBuddyServices.Tests/TestEventDataaccessService.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ParentBuddyServices PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

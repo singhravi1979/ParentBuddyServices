@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCFFD11D-B6BC-4F72-8313-B2DDC7F4ABDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ParentBuddyServices.Tests</RootNamespace>
+    <AssemblyName>ParentBuddyServices.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParentBuddyServices\ParentBuddyServices.csproj">
+      <Project>{2B110528-F49E-43B5-97F3-D02D9508E356}</Project>
+      <Name>ParentBuddyServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.DataAccessLayer\ParentBuddyService.DataAccessLayer.csproj">
+      <Project>{FDF23E1B-DF17-4162-9453-DAE8595299A4}</Project>
+      <Name>ParentBuddyService.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.DataContracts\ParentBuddyService.DataContracts.csproj">
+      <Project>{8632736B-2E80-4DB9-8D68-9E3651CD38C0}</Project>
+      <Name>ParentBuddyService.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.DependencyResolution\ParentBuddyService.DependencyResolution.csproj">
+      <Project>{482BB85B-894E-482C-8ECC-5970752411CA}</Project>
+      <Name>ParentBuddyService.DependencyResolution</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyService.ServiceContracts\ParentBuddyService.ServiceContracts.csproj">
+      <Project>{0FA312DD-0A92-4E05-B562-967BA6718F35}</Project>
+      <Name>ParentBuddyService.ServiceContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParentBuddyServices.Domain\ParentBuddyServices.Domain.csproj">
+      <Project>{06CC66EE-845F-47EA-B8F2-0A639255D6BB}</Project>
+      <Name>ParentBuddyServices.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestEventDataaccessService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
